@@ -9,6 +9,7 @@ article {
     width: 90%;
     line-height: 1.4em;
     font-weight: 300;
+    max-width: 800px;
 }
 
 h1 {
@@ -19,11 +20,7 @@ h1 {
 }
 
 nav {
-    /* height: 44px;
-    font-size: 17px;
-    font-family: Futura, Helvetica, "sans-serif";
-    font-weight: 500;
-    line-height: 1.4; */
+    align-content: center;
     background-color: #1d1d1f;
     display: flex;
     flex-wrap: wrap;
@@ -98,8 +95,6 @@ img.xbox-image {
 .landing-page img {
     width: 800px;
     margin: 50px;
-    border: 6px solid grey;
-    border-radius: 10px;
 }
 
 img:hover {
@@ -120,6 +115,48 @@ footer {
     padding: 20px;
 }
 
+.banner {
+    height: 225px;
+    background-color: black;
+    background-image: url("../images/industrial_design.jpg");
+    padding-top: 150px;
+    color: white;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+i {
+    margin: 25px 5px;
+}
+
 @media only screen and (min-width: 680px) {
     nav {
         height: 64px;
@@ -129,3 +166,9 @@ footer {
         line-height: 1.6;
     }
 }
+
+@media screen and (prefers-reduced-motion: reduce){
+    .banner {
+        animation: none;
+    }
+  }
