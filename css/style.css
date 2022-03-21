@@ -10,6 +10,7 @@ article {
     line-height: 1.4em;
     font-weight: 300;
     max-width: 800px;
+    margin-top: 100px;
 }
 
 h1 {
@@ -55,6 +56,7 @@ nav li.current,a.current {
     justify-content: center;
     align-content: center;
     box-sizing: border-box;
+    margin-top: 100px;
 }
 
 .gallery.imac {
@@ -78,7 +80,7 @@ img.xbox-image {
 
 .landing-page {
     background-color: #e6e6e6;
-    padding: 10px; /*using padding here (not on images)*/
+    padding: 10px;
     margin: 50px 10px 50px 10px;
     display: grid;
     grid-template-rows: 800px 800px 800px;
@@ -116,10 +118,9 @@ footer {
 }
 
 .banner {
-    height: 225px;
+    height: 300px;
     background-color: black;
     background-image: url("../images/industrial_design.jpg");
-    padding-top: 150px;
     color: white;
     width: 100%;
     margin-left: 0px;
@@ -128,7 +129,18 @@ footer {
     -moz-animation: fadein 2s;
     -ms-animation: fadein 2s;
     animation: fadein 2s;
+    filter: blur(4px); 
 }
+
+.pos_relative{ 
+    position: absolute; 
+    top: 200px; 
+    text-align: center; 
+    width: 100%; 
+    color: white;
+    margin: 0px; 
+}
+
 
 @keyframes fadein {
     from { opacity: 0; }
