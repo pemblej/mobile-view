@@ -25,17 +25,21 @@ nav {
     background-color: #1d1d1f;
     display: flex;
     flex-wrap: wrap;
+    /* overflow: hidden; */
 }
 
 nav li,a {
     display: inline-block;
-    font-size: 13px;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: #f5f5f775;
-    margin: 0 8px;
+    margin: 8px 8px;
     height: 22px;
     text-decoration: none;
+    line-height: 8px;
+    font-family: Futura, Helvetica, "sans-serif";
+    font-weight: 500;
 }
 
 nav a:hover {
@@ -47,6 +51,10 @@ nav li.current,a.current {
     border-bottom: solid #f5f5f7 2px;
     color: white;
 }
+
+/* nav .icon {
+    display: none;
+  } */
 
 .gallery {
     display: grid;
@@ -95,7 +103,7 @@ img.xbox-image {
 }
 
 .landing-page img {
-    width: 800px;
+    width: 90%;
     margin: 50px;
 }
 
@@ -170,12 +178,33 @@ i {
 }
 
 @media only screen and (min-width: 680px) {
-    nav {
+    /* nav {
         height: 64px;
         font-size: 17px;
         font-family: Futura, Helvetica, "sans-serif";
         font-weight: 500;
         line-height: 1.6;
+    } */
+
+    nav {
+        height: 50px;
+        line-height: 1.9;
+    }
+
+    nav li,a {
+        display: inline-block;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #f5f5f775;
+        margin: 0 8px;
+        height: 22px;
+        text-decoration: none;
+    }
+
+    .landing-page img {
+        width: 50%;
+        margin: 50px;
     }
 }
 
@@ -184,3 +213,26 @@ i {
         animation: none;
     }
   }
+
+/* working on hamburger menu */
+  /* @media screen and (max-width: 600px) {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    nav.responsive {position: relative;}
+    nav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  } */
